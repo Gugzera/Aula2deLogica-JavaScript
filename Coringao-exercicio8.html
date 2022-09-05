@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORINTHIANS</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Exercício 8 - CORINTHIANS</h2>
+    <script>
+        let golCorinthians = parseFloat(prompt("Digite a quantidade de gols do CORINTHIANS: "));
+        let golPalmares = parseFloat(prompt("Digite a quantidade de gols do palmeiras: "));
+
+     
+
+        if(golCorinthians>golPalmares){
+            document.write("O CORINTHIANS FOI CAMPEÃO DA LIBERTADORES!!!");
+            document.write("<br> \n O placar foi de: " +  "CORINTHIANS " + golCorinthians + " X " + golPalmares + " palmeiras");
+
+        }else if(golPalmares>golCorinthians){
+            document.write("o palmeiras foi campeão da libertadors ;-:");
+            document.write("<br> \n o placar foi de: " + "palmeiras " + golPalmares + " X " + golCorinthians+ " CORINTHIANS");
+        }else{
+            document.write("O jogo empatou!!");
+        }
+
+    </script>
+</body>
+</html>

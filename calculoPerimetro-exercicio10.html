@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Exercício 10 - calcular perímetros</h2>
+    <script>
+        let result = 0;
+        let lados = prompt("Quantos lados o polígono tem? ");
+        let cm = parseInt(prompt("Digite os centímetros de cada lado desse polígono: "));
+
+
+        if(lados==3){
+            result = lados * cm;
+            document.write("O Polígono é um Triângulo");
+            document.write("<br /> Seu perímetro é de: " + result);
+        }else if(lados==4){
+            result = lados * cm;
+            document.write("O Polígono é um Quadrado");
+            document.write("<br /> Seu perímetro é de: " + result);
+        }else if(lados==5){
+            result = lados * cm;
+            document.write("O Polígono é um Pentágono");
+            document.write("<br /> Seu perímetro é de: " + result);
+        }else if(lados>5){
+            document.write("Polígono não identificado");
+        }
+        else{
+            document.write("Não é um Polígono");
+        }
+
+    </script>
+</body>
+</html>

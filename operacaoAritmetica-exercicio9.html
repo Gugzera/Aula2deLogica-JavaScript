@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>Exercício 9 - calcular sobre dois valores</h2>
+    <script>
+        let num1 = parseInt(prompt("Digite o primeiro número: ")); 
+        let result = 0;
+        let num2 = parseInt(prompt("Digite o segundo número: "));
+        let operacao = prompt("Qual das operações você deseja? - digite 1.Adição, digite 2.Subtração, digite 3.Divisão, digite 4.Multiplicação");
+     
+
+        if(operacao==1){
+            result = num1 + num2;
+            document.write("O resultado da soma é: " + result);
+
+        }else if(operacao==2){
+            result = num1 - num2;
+            document.write("O resultado da subtração é: " + result);
+        }else if(operacao==3){
+            result = num1 / num2;
+            document.write("O resultado da divisão é: " + result);
+        }else if(operacao==4){
+            result = num1 * num2;
+            document.write("O resultado da multiplicação é: " + result);
+        }else{
+            document.write("O valor digitado esta incorreto!!");
+        }
+
+    </script>
+</body>
+</html>
